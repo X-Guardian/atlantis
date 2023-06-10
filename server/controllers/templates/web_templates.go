@@ -404,15 +404,15 @@ var ProjectJobsTemplate = template.Must(template.New("blank.html.tmpl").Parse(`
   </footer>
 
     <script src="{{ .CleanedBasePath }}/static/js/jquery-3.5.1.min.js"></script>
-    <script src="{{ .CleanedBasePath }}/static/js/xterm-4.9.0.js"></script>
-    <script src="{{ .CleanedBasePath }}/static/js/xterm-addon-attach-0.6.0.js"></script>
-    <script src="{{ .CleanedBasePath }}/static/js/xterm-addon-fit-0.4.0.js"></script>
+    <script src="{{ .CleanedBasePath }}/static/js/xterm-4.19.0.js"></script>
+    <script src="{{ .CleanedBasePath }}/static/js/xterm-addon-attach-0.8.0.js"></script>
+    <script src="{{ .CleanedBasePath }}/static/js/xterm-addon-fit-0.5.0.js"></script>
 
     <script>
       function updateTerminalStatus(msg) {
           document.getElementsByTagName("footer")[0].innerText = msg;
       }
-      var term = new Terminal({scrollback: 15000});
+      var term = new Terminal({scrollback: 15000, screenReaderMode: true});
       var socket = new WebSocket(
         (document.location.protocol === "http:" ? "ws://" : "wss://") +
         document.location.host +
@@ -485,9 +485,9 @@ var ProjectJobsErrorTemplate = template.Must(template.New("blank.html.tmpl").Par
     </footer>
 
     <script src="{{ .CleanedBasePath }}/static/js/jquery-3.5.1.min.js"></script>
-    <script src="{{ .CleanedBasePath }}/static/js/xterm-4.9.0.js"></script>
-    <script src="{{ .CleanedBasePath }}/static/js/xterm-addon-attach-0.6.0.js"></script>
-    <script src="{{ .CleanedBasePath }}/static/js/xterm-addon-fit-0.4.0.js"></script>
+    <script src="{{ .CleanedBasePath }}/static/js/xterm-4.19.0.js"></script>
+    <script src="{{ .CleanedBasePath }}/static/js/xterm-addon-attach-0.8.0.js"></script>
+    <script src="{{ .CleanedBasePath }}/static/js/xterm-addon-fit-0.5.0.js"></script>
 
     <script>
       var term = new Terminal();
