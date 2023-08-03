@@ -15,7 +15,8 @@ on:
     paths-ignore:
       - '**.go'
       - 'go.*'
-      - '.github/workflows/linter.yml'
+      - '.github/workflows/lint.yml'
+      - '.golangci.yml
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.head_ref || github.run_id }}
