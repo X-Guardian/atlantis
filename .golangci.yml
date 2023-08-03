@@ -1,6 +1,6 @@
 linters:
   enable:
-  - deadcode
+  # deadcode
   - errcheck
   - gochecknoinits
 # We don't use goconst because it gives false positives in the tests.
@@ -11,10 +11,10 @@ linters:
   - gosimple
   - ineffassign
   - staticcheck
-  - structcheck
+  # structcheck
   - typecheck
   - unconvert
   - unused
-  - varcheck
+  # varcheck
   - vet
   - vetshadow
