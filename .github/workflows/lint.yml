@@ -43,7 +43,7 @@ jobs:
       - name: revive
         uses: reviewdog/action-golangci-lint@v2
         with:
-          golangci_lint_flags: "--disable-all"
+          golangci_lint_flags: "--wrong-flag"
           tool_name: revive # Change reporter name.
           level: warning # GitHub Status Check won't become failure with this level.
 
