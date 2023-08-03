@@ -386,7 +386,7 @@ func TestGitlabClient_PullIsMergeable(t *testing.T) {
 								Version string
 							}
 							v := version{Version: serverVersion}
-							json.NewEncoder(w).Encode(v)
+							json.NewEncoder(w).Encode(v)   // test
 						default:
 							t.Errorf("got unexpected request at %q", r.RequestURI)
 							http.Error(w, "not found", http.StatusNotFound)
