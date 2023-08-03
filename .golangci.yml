@@ -18,3 +18,5 @@ linters:
   # varcheck
   - vet
   - vetshadow
+issues:
+  new: false
