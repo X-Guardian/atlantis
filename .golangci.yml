@@ -15,5 +15,5 @@ linters:
   - unused
   - vet
   - vetshadow
-# run:
-#  timeout: 10m
+run:
+  timeout: 10m

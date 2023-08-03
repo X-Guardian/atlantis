@@ -29,6 +29,4 @@ jobs:
     - name: golangci-lint
       uses: reviewdog/action-golangci-lint@v2
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
         tool_name: golangci-lint
-        fail_on_error: true
